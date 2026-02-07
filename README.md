@@ -54,7 +54,7 @@ r.Use(blocker.Handler)
 | Option | Type | Default | Description |
 |--------|------|---------|-------------|
 | `APIKey` | `string` | — | API key from the bbloker dashboard (required) |
-| `APIURL` | `string` | `https://api.bbloker.com` | API endpoint |
+| `APIURL` | `string` | `https://bbloker.com` | API endpoint |
 | `SyncInterval` | `time.Duration` | `5m` | How often to fetch updated rules |
 | `FlushInterval` | `time.Duration` | `10s` | Telemetry batch flush interval |
 | `BufferSize` | `int` | `100` | Max buffered fingerprints before force flush |

@@ -10,7 +10,7 @@ type Config struct {
 	// API key from the bbloker dashboard (bb-sk-xxx). Required.
 	APIKey string
 
-	// API endpoint. Default: "https://api.bbloker.com"
+	// API endpoint. Default: "https://bbloker.com"
 	APIURL string
 
 	// Rule sync interval. Default: 5 * time.Minute
@@ -49,7 +49,7 @@ type Bbloker struct {
 // goroutines for rule syncing, telemetry flushing, and rate-limit cleanup.
 func New(cfg Config) *Bbloker {
 	if cfg.APIURL == "" {
-		cfg.APIURL = "https://api.bbloker.com"
+		cfg.APIURL = "https://bbloker.com"
 	}
 	if cfg.SyncInterval == 0 {
 		cfg.SyncInterval = 5 * time.Minute
